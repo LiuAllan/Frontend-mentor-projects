@@ -34,6 +34,7 @@ h2 {
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 25px;
+	color: hsl(303, 10%, 53%);
 }
 
 .header-container {
@@ -148,4 +149,16 @@ h2 {
 .verified {
 	color: hsl(333, 80%, 67%);
 	margin-bottom: 1rem;
+}
+
+.profilepic {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-right: 1rem;
+}
+
+.review-heading {
+	display: flex;
+	flex-direction: row;
 }
