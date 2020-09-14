@@ -76,6 +76,7 @@ html, body {
 	width: 100%;
 	padding-right: 4rem;
 	font-family: 'Josefin Sans', sans-serif;
+
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -108,6 +109,23 @@ html, body {
 .submit-button:focus {
 	outline: none;
 }
+
+.error {
+	border-color: hsl(0, 93%, 68%);
+	border-width: 2px;
+	color: hsl(0, 93%, 68%);
+	/*Icon*/
+	text-indent: 17px;
+	background-image:url(./images/icon-error.svg); 
+	background-repeat: no-repeat; 
+	background-position: 200px 10px;
+}
+
+/*#input_icon {
+	position: absolute;
+	bottom: 2px;
+	right: 5px;
+}*/
 
 @media only screen and (min-width: 701px) {
 	.mobile {
