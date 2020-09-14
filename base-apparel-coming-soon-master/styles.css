@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	/*width: 1440px;*/
+	overflow: hidden;
+}
+
+.container-left {
+	padding-top: 4rem;
+	padding-left: 10rem;
+	padding-right: 10rem;
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.container-right {
+	width: 100%;
+	height: auto;
+}
+
+.logo {
+	margin-bottom: 6rem;
+}
+
+.header {
+	margin-bottom: 3rem;
+}
+
+.header h2 {
+	font-size: 16px;
+	line-height: 1.5rem;
+	color: hsl(0, 36%, 70%);
+	font-weight: 400;
+}
+
+.header h1 {
+	font-size: 72px;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+}
+
+.header h1 span {
+	color: hsl(0, 36%, 70%);
+	font-weight: 300;
+}
+
+.email {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.email-input {
+	padding: 1rem;
+	border-radius: 25px;
+	border-color: hsl(0, 36%, 70%);
+	border-width: 1px;
+	outline: none;
+	/*width: 90%;*/
+	width: 100%;
+	padding-right: 4rem;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: hsl(0, 36%, 70%);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: hsl(0, 36%, 70%);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: hsl(0, 36%, 70%);
+}
+
+.submit-button {
+	margin-left: 1.5rem;
+	border: none;
+	border-radius: 25px;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	box-shadow:  0 15px 20px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.09);
+}
+
+.submit-button:hover {
+	box-shadow:  0 15px 20px 0 rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.submit-button:focus {
+	outline: none;
+}
+
+@media only screen and (min-width: 701px) {
+	.mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.container-right img {
+		display: none;
+	}
+	.bg {
+		display: none;
+	}
+
+	.mobile {
+		width: 100%;
+	}
+
+	.container {
+		overflow: none;
+		flex-direction: column;
+	}
+
+	.email {
+		justify-content: center;
+		align-self: center;
+	}
+
+	.container-left {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header h1 {
+		font-size: 50px;
+	}
+
+	.header {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.logo {
+		text-align: left;
+		padding: 2rem;
+		margin: 0;
+	}
+
+}
