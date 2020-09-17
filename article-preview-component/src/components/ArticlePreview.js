@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './StyledArticlePreview.css';
 import articleImage from '../images/drawers.jpg';
 import profileImage from '../images/avatar-michelle.jpg';
 import shareIcon from '../images/icon-share.svg';
 
+import Socials from './Socials';
+
 const Article = () => {
+
+	const [toggleSocial, setToggleSocial] = useState(false);
+
+	const handleClick = () => {
+		setToggleSocial(!toggleSocial);
+	}
+
 	return (
 		<div className="article-preview-container">
 			<img src={articleImage} alt='DrawerImage' className='articleImage'/>
@@ -30,8 +39,8 @@ const Article = () => {
 							<span className='user-date'>28 Jun 2020</span>
 						</div>
 					</div>
-
-					<div className='share-button'>
+					{ toggleSocial ? <Socials /> : null }
+					<div className='share-button' onClick={handleClick}>
 						<img src={shareIcon} alt='' />
 					</div>
 				</div>

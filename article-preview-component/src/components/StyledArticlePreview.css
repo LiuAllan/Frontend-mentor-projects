@@ -32,12 +32,13 @@ h1 {
 	font-weight: 700;
 	font-size: 20px;
 	margin: 0;
-	color: '#333';
+	color: hsl(217, 19%, 35%);
 }
 
 p {
 	font-weight: 500;
 	font-size: 13px;
+	color: hsl(214, 17%, 51%);
 }
 
 .user {
@@ -55,6 +56,7 @@ p {
 }
 .user-date {
 	font-weight: 500;
+	color: hsl(214, 17%, 51%);
 }
 
 .user-share {
@@ -68,6 +70,10 @@ p {
 	background-color: hsl(210, 46%, 95%);
 	border-radius: 50%;
 	padding: 0.5rem;
+}
+
+.share-button img:hover {
+	background-color: hsl(212, 23%, 69%);
 }
 
 @media only screen and (max-width: 750px) {
