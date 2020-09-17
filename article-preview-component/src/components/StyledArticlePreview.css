@@ -7,6 +7,7 @@
 	height: 280px;
 	display: flex;
 	border-radius: 15px;
+	box-shadow: 8px 25px 50px 0px rgba(0,0,0,0.15)
 }
 
 .articleImage {
