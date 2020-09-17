@@ -4,3 +4,4 @@ Repo contains my solutions to Frontend Mentor projects at https://www.frontendme
 Live Demos:
 - https://social-proof-component-xi.vercel.app/
 - https://base-apparel-splash-screen.vercel.app/
+- https://article-preview-component-react-plum.vercel.app/
