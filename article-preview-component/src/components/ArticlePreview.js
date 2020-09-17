@@ -29,6 +29,7 @@ const Article = () => {
 					to help you make any room feel complete.
 				</p>
 
+				
 				<div className='user-share'>
 					
 
@@ -39,12 +40,13 @@ const Article = () => {
 							<span className='user-date'>28 Jun 2020</span>
 						</div>
 					</div>
-					{ toggleSocial ? <Socials /> : null }
+
 					<div className='share-button' onClick={handleClick}>
 						<img src={shareIcon} alt='' />
 					</div>
 				</div>
 			</div>
+			{ toggleSocial ? <Socials /> : null }
 		</div>
 	);
 }

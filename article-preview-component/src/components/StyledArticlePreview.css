@@ -7,7 +7,8 @@
 	height: 280px;
 	display: flex;
 	border-radius: 15px;
-	box-shadow: 8px 25px 50px 0px rgba(0,0,0,0.15)
+	box-shadow: 8px 25px 50px 0px rgba(0,0,0,0.15);
+	position: relative;
 }
 
 .articleImage {
@@ -72,17 +73,18 @@ p {
 	padding: 0.5rem;
 }
 
-.share-button img:hover {
+.share-button img:hover, .share-button img:focus {
 	background-color: hsl(212, 23%, 69%);
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1400px) {
 	.article-preview-container {
 		width: 375px;
-		height: 730px;
+		height: auto;
 		display: flex;
 		flex-direction: column;
 		border-radius: 15px;
+		position: relative;
 	}
 
 	.articleImage {
@@ -94,5 +96,9 @@ p {
 
 	p {
 		margin-bottom: 2rem;
+	}
+
+	.share-button {
+		z-index: 51;
 	}
 }

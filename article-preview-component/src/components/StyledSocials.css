@@ -6,7 +6,7 @@
 	background-color: hsl(217, 19%, 35%);
 	z-index: 50;
 	position: absolute;
-	right: 17%;
+	right: -85px;
 	top: 45%;
 	padding: 1rem;
 	padding-left: 2rem;
@@ -68,27 +68,28 @@
 	font-weight: 500;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1400px) {
 	.rectangle-mobile {
 		display: none;
 	}
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1400px) {
 	.rectangle {
 		display: none;
 	}
 
 	.rectangle-mobile {
 		width: auto;
-		height: auto;
+		height: 8%;
 		background-color: hsl(217, 19%, 35%);
 		z-index: 50;
 		position: absolute;
-		bottom: 2vh;
-		left: 16vw;
-		/*right: 17%;
-		top: 45%;*/
+		right: 0;
+		bottom: 0;
+
+
+
 		padding: 1rem;
 		padding-left: 2rem;
 		padding-right: 10rem;
@@ -100,7 +101,7 @@
 	}
 
 	.rectangle-mobile h1 {
-		font-size: 13px;
+		font-size: 15px;
 		text-transform: uppercase;
 		letter-spacing: 0.5rem;
 		color: hsl(212, 23%, 69%);
