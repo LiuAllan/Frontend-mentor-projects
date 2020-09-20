@@ -437,8 +437,8 @@ p {
 		margin: 2rem;
 
 		img {
-			width: 35%;
-			height: 35%;
+			max-width: 50%;
+			height: auto
 		}
 	}
 
@@ -458,6 +458,10 @@ p {
 	.grow-together {
 		flex-direction: column-reverse;
 		padding: 1rem;
+
+		p {
+			padding-top: 2rem;
+		}
 
 		.illustration1 {
 			padding: 0;
@@ -479,6 +483,10 @@ p {
 		flex-direction: column;
 		padding: 1rem;
 
+		p {
+			padding-top: 2rem;
+		}
+
 		.flowing-conversations-description {
 			padding: 0;
 			text-align: center;
@@ -491,6 +499,11 @@ p {
 	.your-users {
 		flex-direction: column-reverse;
 		padding: 1rem;
+
+		
+		p {
+			padding-top: 2rem;
+		}
 
 		.illustration3 {
 			padding: 0;

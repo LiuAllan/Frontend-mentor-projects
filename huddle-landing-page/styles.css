@@ -371,8 +371,8 @@ p {
     margin: 2rem;
   }
   .header img {
-    width: 35%;
-    height: 35%;
+    max-width: 50%;
+    height: auto;
   }
 
   .build-community p {
@@ -388,6 +388,9 @@ p {
   .grow-together {
     flex-direction: column-reverse;
     padding: 1rem;
+  }
+  .grow-together p {
+    padding-top: 2rem;
   }
   .grow-together .illustration1 {
     padding: 0;
@@ -407,6 +410,9 @@ p {
     flex-direction: column;
     padding: 1rem;
   }
+  .flowing-conversations p {
+    padding-top: 2rem;
+  }
   .flowing-conversations .flowing-conversations-description {
     padding: 0;
     text-align: center;
@@ -418,6 +424,9 @@ p {
   .your-users {
     flex-direction: column-reverse;
     padding: 1rem;
+  }
+  .your-users p {
+    padding-top: 2rem;
   }
   .your-users .illustration3 {
     padding: 0;
